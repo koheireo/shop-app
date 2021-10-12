@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+/*	すべてのWEBページに適用する内容	*/
+html{
+	font-family: serif;
+}
+
+html *{
+	box-sizing: border-box;
+}
+
+header{
+	text-align: center;
+
+}
+
+body{
+	margin: 0 0 0 0;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/*	ログイン画面適用内容(bodyタグ)	*/
+.Login{
+	text-align: center;
+}
+
+input.Userid{
+	width: 240px;
+	/* 27文字入力想定 */
+}
+
+input.Pass{
+	width: 240px;
+	/* 27文字入力想定 */
+}
+
+.Fontp{
+	font-size: 50%;
+}
+
+/*	ログイン画面へのリンク処理	*/
+.Loglink{
+	margin: 0 5% auto 5%;
+	float: right;
+}
+
+/*	確認用ページ適用内容	*/
+p.Msg0{
+	margin: 0 0 auto 10%;
+	font-size: 22px;
+	margin-bottom: 600px;
+}
+
+/*	ユーザ登録(新規)ページ適用内容	*/
+.Form0{
+	display: inline-block;
+	max-width: 100%;
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.List0{
+	display: inline-block;
+	height:300px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+.Koumoku0{
+	display: inline-block;
+	text-align:left;
+	float: left;
+	margin: 0 2% 0 0;
+}
+
+.Touroku0{
+	display: inline-block;
+	float: left;
+	margin: 0 0 2% 0;
+}
+
+.Kettei0{
+	text-align: center;
+}
+
+/*	ex_ユーザ登録(新規)ページ適用内容	*/
+.Form00{
+	display: inline-block;
+	max-width: 100%;
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.List00{
+	display: inline-block;
+	height:280px;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+.Koumoku00{
+	display: inline-block;
+	text-align:left;
+	float: left;
+	margin: 0 2%;
+}
+
+.Touroku00{
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin: 0 2% 0 1%;
+}
+
+.Input00{
+	display: inline-block;
+	text-align: left;
+	float: left;
+	margin: 0 2% 0 2%;
+}
+
+.Kettei00{
+	text-align: center;
+}
+
+/*	ユーザ登録(変更)ページ適用内容	*/
+.Form1{
+	display: inline-block;
+	max-width: 100%;
+	height:300px;
+	width: 80%;
+	margin: 0 auto 0 10%;
+	text-align: center;
+	background-color: white;
+}
+.Koumoku1{
+	display: inline-block;
+}
+
+.Koumoku1 li{
+	text-align:left;
+}
+
+.Kettei1{
+	text-align: center;
+		/*outline:1px solid #f00;*/
+}
+
+/*	パスワード再設定(依頼)ページ適用内容	*/
+p.Msg1{
+	margin: 0 0 auto 10%;
+	font-size: 22px;
+}
+
+.Form2{
+	display: inline-block;
+	max-width: 100%;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.List2{
+	display: inline-block;
+	height: 100px;
+	width: 30%;
+	margin: 5% auto;
+	text-align: center;
+	background-color: white;
+}
+
+.Koumoku2{
+	display: inline-block;
+	text-align:left;
+	float: left;
+}
+
+.Touroku2{
+	float: right;
+}
+
+.Kettei2{
+	margin: 0 auto;
+}
+
+/*	登録確認用ページ適用内容	*/
+.List5{
+	height:200px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+.Koumoku5{
+	text-align:left;
+	float: left;
+}
+
+.Touroku5{
+	text-align:left;
+	float: right;
+}
+
+.Kettei5{
+	text-align: center;
+}
+
+/*	ユーザ新規登録(確認)用ページ適用内容	*/
+.List6{
+	height:250px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+.Koumoku6{
+	text-align:left;
+	float: left;
+}
+
+.Touroku6{
+	text-align:left;
+	float: right;
+}
+
+.Kettei6{
+	text-align: center;
+}
+
+/*	機能確認用	*/
+/*	ボックス適用範囲確認用	*/
+	/*outline:1px solid #f00;*/

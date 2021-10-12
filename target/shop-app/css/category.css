@@ -1,0 +1,281 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* ここからCSSを記述してください */
+
+header {
+    height: 75px;
+    background-color: rgba(34,49,52,0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* 検索バーを真ん中にするため */
+.header-top {
+    padding-right: 20%;
+}
+.category {
+    padding-right: 20%;
+}
+
+.logo {
+    margin-left: 15%;
+    float: left;
+    background-color: white;
+    padding: 5px 5px;
+}
+
+.keyword {
+    width: 40%;
+    height: 30px;
+}
+
+.category {
+    padding-top: 10px;
+}
+
+.category a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ハンバーガー */
+#wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: rgba(33,33,33,.9);
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2
+}
+
+#wrapper nav ul li {
+    padding: 20px 28px
+}
+
+#wrapper nav ul li a {
+    text-decoration: none;
+    color: #ddd
+}
+
+#wrapper .btn-gnavi {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding-right: 15%;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+
+#wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+
+#wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+}
+
+#wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+}
+
+#wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+}
+
+#wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+#wrapper .btn-gnavi.open span {
+    background: #fff
+}
+
+#wrapper .btn-gnavi.open span:nth-child(1) {
+    width: 24px;
+    -webkit-transform: translate(-7px,17px) rotate(45deg);
+    transform: translate(-7px,17px) rotate(45deg)
+}
+
+#wrapper .btn-gnavi.open span:nth-child(3) {
+    width: 24px;
+    -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+    transform: translate(-7px,-17px) rotate(-45deg)
+}
+
+
+/*  */
+.item-wrapper {
+    padding-top: 65px;
+    height: auto;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.popular-category {
+    background-color: white;
+    height: 180px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popular-category h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 60px 0 20px 0;
+    color: #5f5d60;
+}
+
+.popular-category a {
+    font-size: 13px;
+    padding-top: 15px;
+    color: #b3aeb5;
+    width: 50%;
+    text-align: center;
+}
+
+.popular-category a:hover{
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category-name {
+    padding: 0 15px 0 15px;
+}
+
+
+
+/*  */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top {
+    height: 30px;
+    padding: 40px 0 20px 0;
+}
+
+.title {
+    float: left;
+    font-size:x-large;
+}
+
+.more {
+    float: right;
+}
+.more a {
+    text-decoration: none;
+}
+
+/* New List flex */
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.item {
+    padding: 20px 20px 40px 20px;
+}
+.item p {
+    color: black;
+    padding-top: 20px;
+}
+
+/* 枠線 */
+.item a img {
+    border:4px solid white
+}
+
+.item a:hover img {
+    border:4px solid lightblue
+}
+
+
+.back {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+/*  */
+
+footer {
+    border-top: 1px solid #eee;
+    background-color: rgba(34,49,52,0.9);
+    height: 150px;
+}
+
+footer p {
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    /* .flex-listにflex-directionを指定してください */
+    .flex-list {
+      flex-direction: column;
+    }
+    
+    /* .flex-list liにmarginを0 autoに指定してください */
+    .flex-list li {
+      margin: 0 auto;
+      text-align: center;
+      padding: 5px 5px 300px 5px;
+    }
+    
+}
